@@ -104,6 +104,18 @@ fn main() {
         TimerFuture::new(Duration::new(2, 0)).await;
         println!("Rana's PC: done!");
     });
+    spawner.spawn(async {
+        println!("Rana's PC: howdy!");
+        // Wait for our timer future to complete after two seconds.
+        TimerFuture::new(Duration::new(2, 0)).await;
+        println!("Rana's PC: done!");
+    });
+    spawner.spawn(async {
+        println!("Rana's PC: howdy!");
+        // Wait for our timer future to complete after two seconds.
+        TimerFuture::new(Duration::new(2, 0)).await;
+        println!("Rana's PC: done!");
+    });
 
     println!("Rana's PC: hey heyyy!");
 
