@@ -9,5 +9,7 @@
 <h1>Reflection 3</h1>
 <h3>Understanding why</h3>
 <br>From the trial I conducted, I observed that the `sys.out` outside the async function printed first, followed by the `sys.out` inside the async function. However, now we know that if we replicate the async function, the program won't print 'howdy' and 'done' simultaneously but separately, since they are on two different timelines. </br>
+
 ![Ref 3 Image Without Spawner](static/img_1.png)
+
 ![Ref 3 Image With Spawner](static/img_2.png)
